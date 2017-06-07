@@ -12,4 +12,9 @@ describe Converter do
     expect(converter.arabic_to_roman(2)).to eq("II")
   end
 
+  it "converts arabic 3 to numeral III" do
+    converter = Converter.new
+    expect(converter.arabic_to_roman(3)).to eq("III")
+  end
+
 end
