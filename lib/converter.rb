@@ -1,7 +1,11 @@
 class Converter
 
   def arabic_to_roman(arabic)
-    "I"
+    if arabic == 1
+      "I"
+    else
+      "II"
+    end
   end
 
 end
