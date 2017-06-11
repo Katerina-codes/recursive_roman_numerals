@@ -2,22 +2,23 @@ require 'converter'
 
 describe Converter do
   it "converts 0" do
-    expect(Converter.new.arabic_to_roman(0)).to eq("")
+    expect(subject.arabic_to_roman(0)).to eq("")
   end
 
   it "converts 1" do
-    expect(Converter.new.arabic_to_roman(1)).to eq("I")
+    expect(subject.arabic_to_roman(1)).to eq("I")
   end
 
   it "converts 2" do
-    expect(Converter.new.arabic_to_roman(2)).to eq("II")
+    expect(subject.arabic_to_roman(2)).to eq("II")
   end
 
   it "converts 4" do
-    expect(Converter.new.arabic_to_roman(4)).to eq("IV")
+    expect(subject.arabic_to_roman(4)).to eq("IV")
   end
 
   it "converts 5" do
-    expect(Converter.new.arabic_to_roman(5)).to eq("V")
+    expect(subject.arabic_to_roman(5)).to eq("V")
   end
+
 end
