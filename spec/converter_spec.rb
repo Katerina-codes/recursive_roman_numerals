@@ -12,4 +12,8 @@ describe Converter do
   it "converts 2" do
     expect(Converter.new.arabic_to_roman(2)).to eq("II")
   end
+
+  it "converts 4" do
+    expect(Converter.new.arabic_to_roman(4)).to eq("IV")
+  end
 end

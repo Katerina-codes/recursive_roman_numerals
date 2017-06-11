@@ -7,6 +7,8 @@ class Converter
   def convert(result, arabic)
     if arabic == 0
       result
+    elsif arabic == 4
+      convert(result + "IV", arabic - 4)
     else
       convert(result + "I", arabic - 1)
     end
