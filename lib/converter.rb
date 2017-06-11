@@ -3,8 +3,10 @@ class Converter
   def arabic_to_roman(arabic)
     if arabic == 0
       ""
-    else
+    elsif arabic == 1
       "I"
+    else
+      "II"
     end
   end
 
