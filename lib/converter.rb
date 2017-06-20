@@ -7,6 +7,8 @@ class Converter
   def convert(result, arabic)
     if arabic == 0
       result
+    elsif arabic == 50
+      convert(result + "L", arabic - 50)
     elsif arabic >= 10
       convert(result + "X", arabic - 10)
     elsif arabic == 9
@@ -16,7 +18,7 @@ class Converter
     elsif arabic < 4
       convert(result + "I", arabic - 1)
     elsif arabic == 4
-      convert(result + "IV", arabic - 4) # "VVI"
+      convert(result + "IV", arabic - 4)
     end
   end
 
