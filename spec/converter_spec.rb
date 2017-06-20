@@ -49,4 +49,8 @@ describe Converter do
   expect(subject.arabic_to_roman(90)).to eq("XC")
   end
 
+  it "converts 100" do
+  expect(subject.arabic_to_roman(100)).to eq("C")
+  end
+
 end
