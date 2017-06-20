@@ -60,4 +60,8 @@ describe Converter do
   it "converts 700" do
   expect(subject.arabic_to_roman(700)).to eq("DCC")
   end
+
+  it "convert 900" do
+  expect(subject.arabic_to_roman(900)).to eq("CM")
+  end
 end
