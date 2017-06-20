@@ -8,8 +8,8 @@ class Converter
     if arabic == 0
       result
     elsif arabic >= 500
-      convert(result + "D", arabic - 500)
-    elsif arabic == 100
+      convert(result + "D", arabic - 500) 
+    elsif arabic >= 100
       convert(result + "C", arabic - 100)
     elsif arabic >= 90
       convert(result + "XC", arabic - 90)

@@ -53,4 +53,11 @@ describe Converter do
   expect(subject.arabic_to_roman(100)).to eq("C")
   end
 
+  it "converts 500" do
+  expect(subject.arabic_to_roman(500)).to eq("D")
+  end
+
+  it "converts 700" do
+  expect(subject.arabic_to_roman(700)).to eq("DCC")
+  end
 end
