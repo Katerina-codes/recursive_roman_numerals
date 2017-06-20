@@ -33,4 +33,8 @@ describe Converter do
     expect(subject.arabic_to_roman(10)).to eq("X")
   end
 
+  it "converts 11" do
+    expect(subject.arabic_to_roman(11)).to eq("XI")
+  end
+
 end
