@@ -9,10 +9,12 @@ class Converter
       result
     elsif arabic == 4
       convert(result + "IV", arabic - 4)
+    elsif arabic == 9
+      convert(result + "IX", arabic - 9)
     elsif arabic >= 5
       convert(result + "V", arabic - 5)
-    else
-      convert(result + "I", arabic - 1) # "IV"- 0
+    elsif arabic < 4
+      convert(result + "I", arabic - 1)
     end
   end
 

@@ -25,4 +25,8 @@ describe Converter do
     expect(subject.arabic_to_roman(6)).to eq("VI")
   end
 
+  it "converts 9" do
+    expect(subject.arabic_to_roman(9)).to eq("IX")
+  end
+
 end
