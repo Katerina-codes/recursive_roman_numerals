@@ -7,6 +7,8 @@ class Converter
   def convert(result, arabic)
     if arabic == 0
       result
+    elsif arabic >= 1000
+      convert(result + "M", arabic - 1000)
     elsif arabic >= 900
       convert(result + "CM", arabic - 900)
     elsif arabic >= 500
