@@ -68,4 +68,8 @@ describe Converter do
   it "converts 1000" do
   expect(subject.arabic_to_roman(1000)).to eq("M")
   end
+
+  it "converts 3999" do
+    expect(subject.arabic_to_roman(3999)).to eq("MMMCMXCIX")  
+  end
 end
